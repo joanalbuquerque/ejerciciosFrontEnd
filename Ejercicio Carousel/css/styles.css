@@ -1,0 +1,141 @@
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+    }
+
+
+    #logo img {
+      width: 150px;
+      height: 150px;
+    }
+
+    #logo{
+      text-align: center;
+    }
+
+    #slides {
+      display: none;
+      position: relative;
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      left: 0;
+      }
+
+    #slides .slidesjs-next {
+      right: 0;
+      }
+
+    #slides .slidesjs-previous, #slides .slidesjs-next {
+      position: absolute;
+      top: 90%;
+      bottom: 20px;
+      z-index: 15;
+      padding: 10px; 
+    }
+
+    .slidesjs-pagination {
+      position: absolute;
+      list-style: none;
+      bottom: 20px;
+      z-index: 15;
+      left: 45%;
+      margin: 0;
+      padding: 10px 20px 10px 20px;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color:#fff;
+      text-decoration: none;
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+/* RESPONSIVE */
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+
+      #slides .slidesjs-previous, #slides .slidesjs-next {
+      top: 40%;   
+      }
+
+      .slidesjs-pagination {     
+      left: 35%;
+    }
+
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1000px
+      }
+    }

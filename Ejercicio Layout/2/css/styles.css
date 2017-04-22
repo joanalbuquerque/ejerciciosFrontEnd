@@ -1,0 +1,55 @@
+
+body{
+	font-size: 18px;
+	font-family: 'Courier New';
+	margin: 40px;
+}
+
+.container {
+	position: relative;
+    border: 2px;
+}
+
+p{
+	font-family: 'Courier New';
+	margin: 20px;
+
+}
+
+.box {
+	  float: left;
+	  margin: 0em;
+	}
+
+.after-box {
+	  clear: left;
+	  font-family: 'Courier New';
+	  text-align: center;
+	}
+
+.other-box {
+	border: 5px 
+}
+
+section {
+    border: 5px solid #ededed;
+    background-color: #ededed;
+}
+
+
+img {
+	float: left;
+	margin-right: 30px;
+	width: 200px;
+}
+
+#titulo{
+	text-align: center;
+}
+
+#imagenes{
+	margin-left: 50px;
+}
+
+
+	

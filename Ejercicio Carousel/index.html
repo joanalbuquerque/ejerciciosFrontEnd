@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Carousel Example</title>
+
+  	<meta name="viewport" content="width=device-width">
+
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+  	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div id="header">
+  <div id="logo">
+    <img src="img/Logo Parisia Mett.jpg" alt="Parisia Mett"/>
+  </div>
+</div>
+  
+<div class="container">
+    <div id="slides">
+        <img src="img/ParisiaMett1.jpg" alt="foto">
+        <img src="img/ParisiaMett2.jpg" alt="foto">
+        <img src="img/ParisiaMett3.jpg" alt="foto">
+        <img src="img/ParisiaMett4.jpg" alt="foto">
+	      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      	<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+    </div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+
+	<script>
+	    $(function() {
+	      $('#slides').slidesjs({
+          width: 960,
+          height: 600,
+	        navigation: false
+	      });
+	    });
+  	</script>
+
+</body>
+</html>
